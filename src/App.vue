@@ -13,11 +13,11 @@
         </ul>
         <ul class="actions-list">
           <li class="actions-link">
-            <router-link class="btn-login">Sign in</router-link>
+            <router-link to="/" class="btn-login">Sign in</router-link>
             <!-- <a href="#" class="header-action__link header-action__log">Sign in</a> -->
           </li>
           <li class="actions-link">
-            <router-link class="btn-primary">Free Trial</router-link>
+            <router-link to="/" class="btn-primary">Free Trial</router-link>
             <!-- <a href="#" class="header-action__link btn-primary">Free Trial</a> -->
           </li>
         </ul>
