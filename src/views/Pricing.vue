@@ -1,25 +1,16 @@
 <template>
-  <h1>Pricing</h1>
+  <h1 class="title">Pricing page</h1>
 </template>
 
 <script>
 export default {
-  name: 'Pricing',
-  data() {
-    return {
-
-    }
-  }
+  name: 'Pricing'
 }
 </script>
 
 <style lang="scss" scoped>
 .title {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  h1 {
-    margin: 0 auto;
-  }
+  text-align: center;
+  padding: 20px 0;
 }
 </style>

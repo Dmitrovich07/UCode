@@ -238,7 +238,7 @@ export default {
 
 <style lang="scss" scoped>
 #home-section {
-  padding: 10px 0 75px;
+  padding: 55px 0 75px;
   background-color: #E4F5EB;
   .container {
     .home {
@@ -251,11 +251,9 @@ export default {
       }
       .home-info {
         max-width: 625px;
-        padding-top: 60px;
         font-weight: 600;
         @media(max-width: 950px) {
           max-width: 100%;
-          padding-top: 40px;
         }
         .home-info__title {
           margin-bottom: 32px;
@@ -269,6 +267,12 @@ export default {
             max-width: 80%;
             margin-bottom: 30px;
           }
+          @media(max-width: 768px) {
+            max-width: 60%;
+            font-size: 30px;
+            line-height: 32px;
+            margin-bottom: 20px;
+          }
         }
         .home-info__text {
           margin-bottom: 50px;
@@ -278,13 +282,15 @@ export default {
             max-width: 80%;
             margin-bottom: 30px;
           }
+          @media(max-width: 768px) {
+            line-height: 24px;
+            margin-bottom: 30px;
+
+          }
         }
         .home-btn-wrap {
           display: flex;
           align-items: center;
-          @media(max-width: 950px) {
-            justify-content: center;
-          }
           @media(max-width: 440px) {
             flex-direction: column;
           }
@@ -293,6 +299,10 @@ export default {
             margin-right: 30px; 
             @media(max-width: 440px) {
               margin: 0 0 20px 0;
+            }
+            @media(max-width: 768px) {
+              width: 150px;
+              padding: 10px 0;
             }
           }
           .home-video {
@@ -303,6 +313,7 @@ export default {
               color: #45B871;
             }
             .home-video__btn {
+              font-size: 18px;
               position: relative;
               width: 66px;
               height: 66px;
@@ -310,6 +321,10 @@ export default {
               background-color: #fff;
               box-shadow: 0px 8px 40px rgba(69, 184, 113, 0.2);
               margin-right: 15px;
+              @media(max-width: 768px) {
+                width: 50px;
+                height: 50px;
+              }
               &::after {
                 content: '';
                 position: absolute;
@@ -370,6 +385,7 @@ export default {
         }
         @media(max-width: 950px) {
           max-width: 100%;
+          text-align: start;
         }
       }
       .companies__list {
@@ -398,9 +414,6 @@ export default {
       } 
       @media(max-width: 600px) {
         align-items: start;
-      }
-      @media(max-width: 450px) {
-        // margin: 0;
       }
       .steps-left { 
         position: relative;
